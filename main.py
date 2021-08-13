@@ -12,7 +12,7 @@ import json
 
 os.environ["CUDA_VISIBLE_DIVICES"]='1'
 # Root directory of the project
-ROOT_DIR ='/mnt/c/Users/no/PycharmProjects/proto_mrcnn'
+ROOT_DIR ='/home/ada/IDD'
 # r'C:\Users\no\PycharmProjects\proto_mrcnn'
 
 
@@ -42,7 +42,7 @@ if not os.path.exists(COCO_MODEL_PATH):
 # train set
 
 dataset_train = DefectDataset()
-dataset_train.load_dataset('/mnt/d/ADA/경은/train')
+dataset_train.load_dataset('/home/ada/IDD/data/train')
     #r'C:\Users\no\Desktop\경은\train')
     # '/mnt/c/Users/no/Desktop/경은/train')
 dataset_train.prepare()
@@ -50,7 +50,7 @@ dataset_train.prepare()
 
 # test/val set
 dataset_val = DefectDataset()
-dataset_val.load_dataset('/mnt/d/ADA/경은/test')
+dataset_val.load_dataset('/home/ada/IDD/data/test')
     #r'C:\Users\no\Desktop\경은\test')
 #'/mnt/c/Users/no/Desktop/경은/test')
 dataset_val.prepare()

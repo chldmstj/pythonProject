@@ -27,7 +27,7 @@ from Config import *
 from DefectDataset import *
 
 #%matplotlib inline
-
+#edit
 
 # Directory to save logs and trained model
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
